@@ -421,6 +421,38 @@ body {
     font-size: 13px;
     font-weight: 800; }
 
+.subs__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  padding: 60px; }
+  .subs__container h1 {
+    color: white;
+    margin-right: 60px;
+    font-size: 32px; }
+  .subs__container-btns {
+    display: flex;
+    flex-direction: column; }
+    .subs__container-btns-contact {
+      outline: none;
+      background-color: white;
+      border: 1px solid orangered;
+      color: orangered;
+      border-radius: 30px;
+      padding: 10px 40px;
+      font-size: 18px;
+      margin: 5px; }
+    .subs__container-btns-job {
+      outline: none;
+      background-color: white;
+      border: 1px solid orangered;
+      color: orangered;
+      border-radius: 30px;
+      padding: 10px 40px;
+      font-size: 18px;
+      margin: 5px; }
+
 .header {
   height: 95vh;
   margin-bottom: 30px;
@@ -757,3 +789,212 @@ body {
   .philosophy__tag__image img {
     width: inherit;
     height: inherit; }
+
+.service {
+  padding: 50px; }
+  .service .column {
+    margin: 30px 0px; }
+  .service__item {
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 2px grey;
+    border: 1px solid orange;
+    padding: 20px; }
+    .service__item button {
+      font-size: 32px;
+      height: 100%;
+      border: none;
+      background-color: white;
+      color: orange;
+      transition: all .3s ease-in; }
+      .service__item button:active, .service__item button:hover, .service__item button:focus {
+        transform: scale(1.2);
+        cursor: pointer;
+        border: none;
+        outline: none; }
+    .service__item__icon {
+      font-size: 70px;
+      margin-top: 20px;
+      color: orange; }
+    .service__item__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .service__item__text span {
+        display: inline-block; }
+      .service__item__text__title {
+        font-size: 32px;
+        font-weight: 800; }
+      .service__item__text__descr {
+        font-size: 17px;
+        font-weight: 400; }
+
+.service__desc {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .service__desc h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: orange; }
+  .service__desc p {
+    font-size: 18px;
+    font-weight: 200;
+    padding: 30px; }
+
+.service__work {
+  margin-top: 50px;
+  margin-left: 60px; }
+  .service__work h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: orange;
+    margin-bottom: 50px; }
+  .service__work__item {
+    margin: 20px; }
+    .service__work__item h1 {
+      font-size: 24px;
+      color: orange; }
+    .service__work__item span {
+      font-size: 15px;
+      font-weight: 200; }
+    .service__work__item_line {
+      color: orange;
+      background-color: orange;
+      display: block;
+      height: 2px;
+      width: 120px;
+      margin-bottom: 20px; }
+
+.service__apply {
+  margin-left: 60px;
+  margin-top: 60px; }
+  .service__apply h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: orange;
+    margin-bottom: 50px; }
+  .service__apply__items {
+    display: flex;
+    overflow: hidden; }
+    .service__apply__items-item {
+      display: inline-block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 400px;
+      margin-left: 60px;
+      padding-bottom: 20px; }
+      .service__apply__items-item img {
+        transition: all .3s ease-out;
+        overflow: none;
+        margin-bottom: 30px; }
+      .service__apply__items-item img:hover {
+        transform: scale(1.2); }
+      .service__apply__items-item h1 {
+        padding: 0 20px;
+        font-size: 28px; }
+      .service__apply__items-item span {
+        font-size: 18px; }
+      .service__apply__items-item button {
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        padding: 10px 40px;
+        border-radius: 30px;
+        font-size: 24px;
+        font-weight: 800;
+        background-color: orangered;
+        color: white; }
+
+.service__clients {
+  margin: 60px; }
+  .service__clients h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: orange;
+    margin-bottom: 50px; }
+  .service__clients__items {
+    margin-top: 60px; }
+    .service__clients__items__item {
+      display: flex;
+      flex-direction: column; }
+      .service__clients__items__item img {
+        height: 60px;
+        width: 60px; }
+      .service__clients__items__item h3 {
+        font-size: 24px;
+        font-weight: 800;
+        color: orange;
+        padding: 20px 0px 0px 0px; }
+      .service__clients__items__item span {
+        font-size: 18px;
+        font-weight: 200; }
+
+.service__insights {
+  margin: 60px; }
+  .service__insights h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: orange;
+    margin-bottom: 50px; }
+  .service__insights__items {
+    margin-top: 80px; }
+    .service__insights__items__item {
+      display: flex;
+      flex-direction: column; }
+      .service__insights__items__item img {
+        height: 70%;
+        width: 100%; }
+      .service__insights__items__item h3 {
+        font-size: 24px;
+        font-weight: 800;
+        color: orange;
+        padding: 20px 0px 0px 0px; }
+      .service__insights__items__item span {
+        font-size: 18px;
+        font-weight: 200; }
+
+.service__story {
+  margin-left: 60px; }
+  .service__story h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: orange;
+    margin-bottom: 50px; }
+  .service__story__items {
+    margin-top: 80px;
+    display: flex;
+    align-items: center; }
+    .service__story__items-item {
+      display: flex; }
+      .service__story__items-item img {
+        height: 600px;
+        width: 60%; }
+      .service__story__items-item-text {
+        margin-right: 20px;
+        padding: 20px;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center; }
+        .service__story__items-item-text h2 {
+          font-size: 24px;
+          color: orange;
+          font-weight: 800;
+          margin-bottom: 20px; }
+        .service__story__items-item-text span {
+          font-size: 14px;
+          color: grey;
+          margin-bottom: 20px;
+          text-align: justify; }
+        .service__story__items-item-text button {
+          padding: 10px 20px;
+          font-size: 18px;
+          color: orange;
+          outline: none;
+          border: 1px solid orangered;
+          width: 40%;
+          border-radius: 30px;
+          background-color: white; }
