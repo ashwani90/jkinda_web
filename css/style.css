@@ -61,6 +61,8 @@ body {
       .heading-primary--main {
         letter-spacing: 1rem;
         font-family: 5rem; } }
+    .heading-primary--main span {
+      color: #6779d6; }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -77,7 +79,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #ff7730, #28b485);
+  background-image: linear-gradient(to right, #76e4f5, #6779d6);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
@@ -169,10 +171,10 @@ body {
     background-color: #fff; }
 
 .btn--green {
-  background-color: #55c57a;
+  background-color: #76bef5;
   color: #fff; }
   .btn--green::after {
-    background-color: #55c57a; }
+    background-color: #76bef5; }
 
 .btn--animated {
   animation: moveInbottom .5s ease-out .75s;
@@ -180,15 +182,15 @@ body {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #55c57a;
+  color: #76bef5;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #55c57a;
+  border-bottom: 1px solid #76bef5;
   padding: 3px;
   transition: all .2s; }
 
 .btn-text:hover .btn-text:focus {
-  background-color: #55c57a;
+  background-color: #76bef5;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
@@ -200,7 +202,7 @@ body {
 .card__container {
   margin: 40px;
   position: relative;
-  height: 65vh; }
+  height: 90vh; }
 
 .card__bx {
   height: 300px;
@@ -247,27 +249,27 @@ body {
 .card__1 {
   top: 0;
   left: calc(50% - 310px - 50px);
-  background-color: #ff7730; }
+  background-color: #76e4f5; }
 
 .card__2 {
   top: 0;
   left: calc(50% + 150px - 50px);
-  background-color: #ff7730; }
+  background-color: #76e4f5; }
 
 .card__3 {
   top: 310px;
   left: calc(50% - 310px - 50px);
-  background-color: #ff7730; }
+  background-color: #76e4f5; }
 
 .card__4 {
   top: 150px;
   left: calc(50% - 80px - 50px);
-  background-color: #ff7730; }
+  background-color: #76e4f5; }
 
 .card__5 {
   top: 310px;
   left: calc(50% + 150px - 50px);
-  background-color: #ff7730; }
+  background-color: #76e4f5; }
 
 .card__title {
   margin-left: 40px;
@@ -460,12 +462,23 @@ body {
   position: relative; }
   .header__image {
     height: 95vh;
-    transform: translateX(-100%);
-    transition: all 0.3s ease-in;
+    width: 100%;
     display: none; }
     .header__image.active {
-      transform: translateX(0%);
       display: block; }
+    .header__image::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      opacity: .7; }
+    .header__image img {
+      overflow: hidden; }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -496,6 +509,14 @@ body {
     width: 0; }
   to {
     width: 100%; } }
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(1.1, 1.1); }
+  100% {
+    transform: scale(1.2, 1.2); } }
 
 .footer {
   background-color: black;
@@ -778,6 +799,39 @@ body {
         margin-bottom: 20px; }
       .product__item__text p {
         font-size: 14px; }
+
+.philosophy__small {
+  height: 300px; }
+  .philosophy__small_section {
+    width: 90%;
+    margin: auto; }
+
+.philosophy__item__content-secondary {
+  position: relative; }
+  .philosophy__item__content-secondary h3, .philosophy__item__content-secondary h4, .philosophy__item__content-secondary h5, .philosophy__item__content-secondary h6 {
+    color: #ffb900; }
+    .philosophy__item__content-secondary h3:after, .philosophy__item__content-secondary h4:after, .philosophy__item__content-secondary h5:after, .philosophy__item__content-secondary h6:after {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 150px;
+      background-color: #5643fa;
+      bottom: -10px;
+      left: 0px; }
+
+.philosophy__item__content h1, .philosophy__item__content h2 {
+  color: #76bef5; }
+
+.philosophy__item__content p {
+  font-size: 15px;
+  font-weight: 200;
+  color: #333; }
+
+.philosophy__item__content span {
+  display: inline-block;
+  height: 3px;
+  background-color: white;
+  width: 150px; }
 
 .philosophy__tag {
   margin-top: 50px;
